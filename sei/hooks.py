@@ -90,23 +90,11 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"sei.tasks.all"
-# 	],
-# 	"daily": [
-# 		"sei.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"sei.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"sei.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"sei.tasks.monthly"
-# 	]
-# }
+scheduler_events = {
+	"monthly": [
+		"sei.seibert_media.doctype.subscription_billing.subscription_billing.create_sales_invoice"
+	]
+}
 
 # Testing
 # -------
